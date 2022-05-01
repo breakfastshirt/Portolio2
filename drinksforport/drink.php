@@ -1,9 +1,9 @@
 <?php
 
-require 'Controller/GameController.php';
+    require 'Controller/GameController.php';
 $Controller = new Controller();
 
-if(isset($_POST['types']))
+    if(isset($_POST['types']))
 {
 
     $drinkTables = $Controller->CreateDrinkTables($_POST['types']);
@@ -15,8 +15,8 @@ else
 }
 
 
-$title = 'drink overview';
-$content = $Controller->CreatedrinkDropdownList(). $drinkTables;
+    $title = 'drink overview';
+    $content = $Controller->CreatedrinkDropdownList(). $drinkTables;
 
 include 'Template.php';
 ?>

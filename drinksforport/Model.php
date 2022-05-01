@@ -37,15 +37,15 @@ class Model
 
 
         while ($row = mysql_fetch_array($result)) {
-            $name = $row[1];
-            $type = $row[2];
-            $price = $row[3];
-            $origin = $row[4];
-            $image = $row[5];
-            $review = $row[6];
+                $name = $row[1];
+                $type = $row[2];
+                $price = $row[3];
+                $origin = $row[4];
+                $image = $row[5];
+                $review = $row[6];
 
 
-            $drink = new Entity(-1, $name, $type, $price, $origin, $image, $review);
+$drink = new Entity(-1, $name, $type, $price, $origin, $image, $review);
             array_push($drinkArray, $drink);
         }
 
